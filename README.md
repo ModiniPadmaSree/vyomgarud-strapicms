@@ -1,5 +1,5 @@
 # 🛩️ Vyom Garud – Fullstack Blog Platform  
-# 🛩️ Vyom Garud – Fullstack Blog Platform  
+
 **React + Vite (Frontend) + Strapi Cloud (Backend)**
 
 This project is a fullstack blog application built using **React (Vite)** for the frontend and **Strapi Cloud** as a headless CMS for the backend.  
