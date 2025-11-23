@@ -1,0 +1,79 @@
+/* src/sections/Hero.module.css (FINAL VIDEO BACKGROUND) */
+
+.hero {
+  background-color: #191919;
+  color: var(--color-white);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* CRUCIAL: Makes the video position relative to the hero section */
+  overflow: hidden;
+  border-bottom: 2px solid #222;
+}
+
+/* --- VIDEO STYLES (CORRECTED) --- */
+.backgroundVideo {
+  position: absolute; /* CRUCIAL: Breaks it out of normal flow */
+  top: 0;           /* CRUCIAL: Anchor to the top left */
+  left: 0;          /* CRUCIAL: Anchor to the top left */
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 1; 
+  /* Removing translate(-50%, -50%) for cleaner 0/0 anchoring */
+  /* transform: translate(-50%, -50%); */ 
+  object-fit: cover;
+  opacity: 0.25; 
+}
+
+/* --- DARK OVERLAY (Crucial for text readability) --- */
+.overlay {
+  content: '';
+  position: absolute;
+  inset: 0; /* Shorthand for top:0, right:0, bottom:0, left:0 */
+  z-index: 2; /* Sits above the video but below the content */
+  /* Dark gradient covering the video */
+ 
+  pointer-events: none;
+}
+
+
+/* --- CONTENT WRAPPER --- */
+.contentWrapper {
+  position: relative;
+  z-index: 10; /* CRUCIAL: Ensures content is on top of video and overlay */
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 6rem 1.5rem;
+}
+
+
+
+.tagline {
+  font-size: 3rem; /* INCREASED Mobile size: was 3.5rem, now 4rem */
+  font-weight: 900;
+  line-height: 1.0; /* Tighter line-height for visual impact */
+  margin-bottom: 2rem;
+  letter-spacing: -0.05em; 
+  /* Metallic Gradient/Shadow Text */
+  color: transparent;
+  background: linear-gradient(180deg, #ffffff, #f3efef);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0 0 10px rgba(93, 91, 91, 0.2), 0 0 20px rgba(255, 123, 0, 0.2);
+}
+.supportingText{
+font-size: 1.5rem;
+}
+
+@media (min-width: 708px) {
+  .tagline {
+    font-size: 6rem; /* INCREASED Desktop size: was 6.5rem, now 8rem for maximum impact */
+  }
+}
+h1{
+    font-size: 3rem;
+}

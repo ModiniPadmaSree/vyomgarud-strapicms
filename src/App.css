@@ -1,0 +1,48 @@
+/* Clean App.css — does NOT override your site layout */
+
+#root {
+  margin: 0;
+  padding: 0;
+  max-width: none;
+  text-align: left;   /* or remove */
+}
+
+/* Logo styles (safe) */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Animation (safe) */
+@keyframes logo-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Remove Vite default card styling that was breaking your sections */
+.card {
+  padding: 0;     /* remove Vite padding */
+  background: none;
+  box-shadow: none;
+}
+
+/* Remove unused styles */
+.read-the-docs {
+  color: inherit;
+}

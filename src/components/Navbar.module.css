@@ -1,0 +1,46 @@
+/* src/components/Navbar.module.css */
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+    padding: 1rem 1rem;
+  background-color: rgba(13, 13, 13, 0.5); 
+  backdrop-filter: blur(1.15em);
+}
+
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--color-white);
+}
+
+.contactLink {
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.contactLink:hover {
+  color: var(--color-orange);
+}
+.links {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}

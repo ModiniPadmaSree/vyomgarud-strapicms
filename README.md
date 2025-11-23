@@ -1,34 +1,16 @@
-# vyomgarud-strapicms
-# 🛩️ Vyom Garud – Fullstack Blog Platform  
-A full stack dynamic site for VyomGarud - Drones manufacturing company that describes about company and display the posts posted by company using Strapi CMS and React.js
+# React + Vite
 
-**React + Vite (Frontend) + Strapi Cloud (Backend)**
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-This project is a fullstack blog application built using **React (Vite)** for the frontend and **Strapi Cloud** as a headless CMS for the backend.  
-Content such as posts, images, and rich text is managed through Strapi Cloud and displayed on the frontend via API.
+Currently, two official plugins are available:
 
-The project is deployed as:  
-- **Frontend:** Vercel  
-- **Backend:** Strapi Cloud
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
----
+## React Compiler
 
-## 📂 Project Overview
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-### **Frontend Tech**
-- React (Vite)
-- React Router
-- Fetch API
-- Custom CSS
-- Deployed on Vercel
+## Expanding the ESLint configuration
 
-### **Backend Tech**
-- Strapi v5 (Cloud)
-- REST API
-- File Uploads via Strapi Media Library
-- Auto CDN for images
-
----
-
-
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

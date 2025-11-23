@@ -1,0 +1,47 @@
+
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Montserrat:wght@700;800;900&display=swap');
+
+/* Define variables for easy reuse (optional but professional) */
+:root {
+  --color-charcoal: #0d0d0d;
+  --color-dark-gray: #1f2937; /* Equivalent to gray-800 */
+  --color-orange: #ff7b00; /* The required assessment color */
+  --color-white: #ffffff;
+}
+
+body {
+  background-color: var(--color-charcoal);
+  color: var(--color-white);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+/* Base resets */
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 2. Keyframe for a Subtle Pulse (for the CTA button) */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 123, 0, 0.6); }
+  70% { box-shadow: 0 0 0 10px rgba(255, 123, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 123, 0, 0); }
+}
+.fadeIn,
+.fadeInStagger,
+.fadeInDelayed {
+  opacity: 1 !important;
+}

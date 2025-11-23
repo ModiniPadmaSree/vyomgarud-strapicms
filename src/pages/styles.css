@@ -1,0 +1,143 @@
+/* --- BLOG LIST CONTAINER STYLES --- */
+.blog-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.blog-list-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #f9700e;
+    font-size: 3rem;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+/* --- POSTS GRID LAYOUT --- */
+.posts-grid {
+    display: grid;
+    /* Creates a responsive grid: 1 column by default, 2 columns on medium screens, 3 on large */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* --- INDIVIDUAL POST CARD STYLES --- */
+.blog-post-card {
+    background: #363535;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-post-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.post-cover-image {
+    width: 100%;
+    height: 200px; /* Fixed height for consistent look */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+    display: block;
+}
+
+.post-card-content {
+    padding: 20px;
+    flex-grow: 1; /* Allows content area to fill remaining space */
+}
+
+.post-card-title {
+    font-size: 1.5em;
+    color: #eaeeef;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.post-read-more {
+    display: inline-block;
+    color: #ff891a; /* Primary blue color */
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: color 0.2s ease;
+}
+
+.post-read-more:hover {
+    color: #0056b3;
+}
+
+/* --- UTILITY/LOADING STYLES --- */
+.blog-loading, .blog-no-posts, .post-no-slug {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+/* --- BLOG POST CONTAINER STYLES --- */
+.blog-post-page {
+    max-height:max-content;
+    max-width: 900px; /* Narrower width for better reading comfort */
+    margin: 0 auto;
+    padding: 30px 20px;
+    font-family: Georgia, serif; /* Use a serif font for main content for better readability */
+    background: #ffffff;
+}
+
+.post-title {
+    font-size: 2.8em;
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 2rem;
+    line-height: 1.1;
+    text-align: center;
+}
+
+/* --- COVER IMAGE STYLES --- */
+.post-cover-image-single {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* --- CONTENT BODY STYLES --- */
+.post-content-body {
+    font-size: 1.15em; /* Slightly larger font size for reading */
+    color: #34495e;
+}
+
+.post-paragraph {
+    line-height: 1.75;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+/* --- ERROR/LOADING STYLES --- */
+.blog-loading {
+    text-align: center;
+    padding: 50px;
+    font-size: 1.5em;
+    color: #666;
+}
+
+.blog-error {
+    text-align: center;
+    padding: 50px;
+    font-size: 2em;
+    color: #e74c3c;
+}
+
+.post-no-content {
+    font-style: italic;
+    color: #95a5a6;
+    text-align: center;
+}
