@@ -25,5 +25,3 @@ The project is deployed as:
 - REST API
 - File Uploads via Strapi Media Library
 - Auto CDN for images
-
-# hello 
